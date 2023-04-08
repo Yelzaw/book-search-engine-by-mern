@@ -4,7 +4,7 @@ import { useMutation } from '@apollo/client'
 // import { Link } from 'react-router-dom';
 import { SAVE_BOOK  } from '../utils/mutations';
 import Auth from '../utils/auth';
-// import { saveBook, searchGoogleBooks } from '../utils/API';
+import { saveBook, searchGoogleBooks } from '../utils/API';
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 
 const SearchBooks = () => {
@@ -32,7 +32,8 @@ const SearchBooks = () => {
     }
 
     try {
-      const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchInput}`)
+      const response = await searchGoogleBooks(searchInput);
+      // const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchInput}`)
 
 
       if (!response.ok) {
