@@ -12,6 +12,7 @@ const LoginForm = () => {
   const [userFormData, setUserFormData] = useState({ email: '', password: '' });
   const [validated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
+  // eslint-disable-next-line
   const [login, {error, data}] = useMutation(LOGIN_USER);
 
   const handleInputChange = (event) => {

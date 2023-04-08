@@ -62,6 +62,7 @@ const SavedBooks = () => {
       // setUserData(updatedUser);
       // // upon success, remove book's id from localStorage
       // removeBookId(bookId);
+      // eslint-disable-next-line
       const { data } = removeBook({
         variables: {bookId}
       })
