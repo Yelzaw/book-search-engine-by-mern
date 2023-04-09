@@ -14,7 +14,7 @@ This application will let the users can type a search term in a search box and t
 
 ## URLs
 
-The URL of the deployed application is: Live [link]()
+The URL of the deployed application is: Live [link](https://book-search-engine-by-google.herokuapp.com/)
 
 ## License
 
